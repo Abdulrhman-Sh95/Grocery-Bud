@@ -1,0 +1,126 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #c5cae9;
+}
+body {
+    font-family: Arial;
+    background-color: #c5cae9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body #container {
+    position: relative;
+    padding: 50px 30px;
+    width: 500px;
+    margin: 0 15px;
+    max-width: 500px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(26, 8, 8, 0.2) 0px 2px 8px 0px;
+}
+body #container .title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #455a64;
+}
+body #container #input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+body #container #input #name {
+    width: 75%;
+    border: none;
+    background: #eee;
+    display: block;
+    padding: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+body #container #input #submit {
+    border: none;
+    outline: none;
+    width: 25%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+body #container #input #submit:hover {
+    cursor: pointer;
+    background-color: #9575cd;
+    color: #fff;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.item:hover {
+    background-color:#eee ;
+}
+.item .buttons {
+    display: flex;
+    gap: 10px;
+}
+.item .buttons .edit {
+    color: #4caf50;
+}
+.item .buttons .remove {
+    color: #f44336;
+}
+.item .buttons i:hover {
+    cursor: pointer;
+}
+/* alert */
+#alert {
+     opacity: 0;
+     top: 15px;
+     right: 50%;
+     transform: translateX(50%);
+     letter-spacing: 4px;
+     word-spacing: 6px;
+     font-size: 12px;
+     width: 90%;
+     padding: 3px;
+     border-radius: 7px;
+     position: absolute;
+     transition: 0.5s;
+    text-transform: capitalize;
+}
+.danger {
+    color: #b71c1c;
+    background: #ff57225c
+}
+.add {
+    background: #c5e1a5;
+    color: #1b5e20;
+}
+.clear-all {
+    font-size: 17px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: #f44336;
+    transition: 0.3s;
+}
+.clear-all:hover {
+    cursor: pointer;
+    color: #d32f2f;
+}
